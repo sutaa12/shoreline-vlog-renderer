@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-27T23:44:02.996Z",
+  "captureUrl": "http://127.0.0.1:4174/?quality=capture",
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "deviceScaleFactor": 1
+  },
+  "captureResult": {
+    "authoredDurationSeconds": 24,
+    "wallDurationSeconds": 24.01540000009537,
+    "bytes": 21679502,
+    "mimeType": "video/webm;codecs=vp9",
+    "renderedFrames": 720
+  },
+  "runtime": {
+    "status": "ready",
+    "frame": 11,
+    "elapsedSeconds": 0.36666666666666664,
+    "shot": "shore-establishing",
+    "vrmLoaded": true,
+    "vrmModelName": "VRM1_Constraint_Twist_Sample",
+    "vrmMToonMaterialCount": 20,
+    "vrmNativeOutlineMaterialCount": 7,
+    "springBonesSupported": true,
+    "springUpdateCount": 736,
+    "qualityTier": "capture",
+    "rockCount": 27,
+    "requiredSystems": {
+      "sky": true,
+      "ocean": true,
+      "sand": true,
+      "rocks": true,
+      "shadows": true,
+      "fog": true,
+      "reflections": true,
+      "outline": true
+    },
+    "errors": [],
+    "warnings": [],
+    "capture": {
+      "state": "complete",
+      "authoredDurationSeconds": 24,
+      "wallDurationSeconds": 24.01540000009537,
+      "bytes": 21679502,
+      "mimeType": "video/webm;codecs=vp9",
+      "renderedFrames": 720
+    }
+  },
+  "browserErrors": {
+    "console": [],
+    "page": []
+  },
+  "artifacts": {
+    "video": {
+      "path": "artifacts/iteration-01/shoreline-cinematic.webm",
+      "sha256": "8a2a7d952e3aaed0dadd84ced0e7247604252b5fde2db6ae3917065e350b2709",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "size": "21679502"
+        }
+      },
+      "observedTimelineSeconds": 23.963333333333335
+    },
+    "contactSheet": "artifacts/iteration-01/contact-sheet.png",
+    "finalFrame": "artifacts/iteration-01/capture-complete.png"
+  }
+}
