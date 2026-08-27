@@ -1,0 +1,119 @@
+{
+  "blind_reviews": [],
+  "gates": [
+    {
+      "criteria": [
+        "Locked product requirements, scoring thresholds, iteration isolation, asset rights, and rollback are explicit"
+      ],
+      "evidence": [],
+      "id": "G0",
+      "name": "Specification baseline",
+      "rollback_condition": "Return to the signed specification tag if an implementation branch changes locked requirements",
+      "status": "pending"
+    },
+    {
+      "criteria": [
+        "Candidate skill passes structural validation and independent forward tests",
+        "Plan and completed-artifact scores trigger refactoring at 80 or below",
+        "Large designs compare exactly three viable options"
+      ],
+      "evidence": [],
+      "id": "G1",
+      "name": "Skill validation",
+      "rollback_condition": "Keep the skill project-local and do not add it to global guidance when behavioral tests fail",
+      "status": "pending"
+    },
+    {
+      "criteria": [
+        "Each attempt starts from the specification tag without prior implementation context",
+        "Selected attempt builds and passes deterministic runtime smoke checks",
+        "Completed implementation scores at least 81"
+      ],
+      "evidence": [],
+      "id": "G2",
+      "name": "Independent implementations",
+      "rollback_condition": "Discard the current attempt and restore the last accepted branch or specification tag",
+      "status": "pending"
+    },
+    {
+      "criteria": [
+        "Browser capture covers every required cinematic beat",
+        "Independent artifact-only review has no unresolved S0-S2 finding",
+        "The accepted video is synchronized to Dropbox"
+      ],
+      "evidence": [],
+      "id": "G3",
+      "name": "Capture and independent review",
+      "rollback_condition": "Withdraw the rejected capture and retain the most recent accepted media artifact",
+      "status": "pending"
+    },
+    {
+      "criteria": [
+        "Public GitHub source matches the accepted commit",
+        "Sites summary compares the attempts and its main flow works",
+        "Published artifact and rollback identity are recorded"
+      ],
+      "evidence": [],
+      "id": "G4",
+      "name": "Verified publication",
+      "rollback_condition": "Redeploy the previous accepted Sites version and preserve the earlier Git tag",
+      "status": "pending"
+    }
+  ],
+  "human_gates": [],
+  "known_risks": [
+    {
+      "description": "AI review cannot establish human-perceived visual quality or comfort",
+      "evidence": [
+        {
+          "description": "The rubric keeps human visual acceptance separate from automated gates",
+          "kind": "documentation"
+        }
+      ],
+      "id": "R-HUMAN-VISUAL",
+      "severity": "S3",
+      "status": "open"
+    }
+  ],
+  "project": "Shoreline Vlog Renderer",
+  "release": {
+    "build_identity": null,
+    "integrity": {},
+    "request_verdict": false,
+    "scope": "prototype",
+    "smoke_test": {
+      "evidence": [],
+      "status": "pending"
+    },
+    "url": null
+  },
+  "rollback": {
+    "artifact": null,
+    "instructions": null
+  },
+  "schema_version": "quality-gates.v3",
+  "severity_counts": {
+    "S0": 0,
+    "S1": 0,
+    "S2": 0,
+    "S3": 1
+  },
+  "source_of_truth": [
+    {
+      "label": "Product specification",
+      "location": "docs/product-spec.md"
+    },
+    {
+      "label": "Quality rubric",
+      "location": "docs/quality-rubric.md"
+    },
+    {
+      "label": "Iteration protocol",
+      "location": "docs/iteration-protocol.md"
+    },
+    {
+      "label": "Asset rights ledger",
+      "location": "docs/asset-rights.md"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Simple Robust Implementation"
+  short_description: "Gate plans and completed code against avoidable complexity"
+  default_prompt: "Use $simple-robust-implementation to choose and verify the simplest robust implementation."
