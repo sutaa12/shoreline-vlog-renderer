@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "asset": {
+    "name": "Iteration 02 shoreline photographic plate",
+    "originalPath": "assets/source/iteration-02/shoreline-plate-original.png",
+    "runtimePath": "public/assets/environment/shoreline-plate.webp",
+    "aiGeneratedDisclosure": "This fictional shoreline plate was generated with OpenAI's built-in image generation tool and reviewed for this project."
+  },
+  "generation": {
+    "provider": "OpenAI",
+    "tool": "Codex built-in image_gen",
+    "modelVersion": "not_exposed",
+    "requestId": "not_exposed",
+    "seed": "not_exposed",
+    "generatedAt": "2026-08-28T09:18:43+09:00",
+    "references": [],
+    "localResultArtifact": "exec-36dfe27d-f07a-4e66-94ab-5cc99da244f7.png",
+    "prompt": "Use case: photorealistic-natural\nAsset type: far-field environment plate for a real-time browser shoreline cinematic\nPrimary request: Create a convincingly photorealistic fictional temperate ocean coastline for a 16:9 cinematic background plate.\nScene/backdrop: expansive pale-blue sky with naturally varied soft cumulus clouds; crisp but atmospherically softened horizon; blue-green ocean with believable small wind waves, foam lines, and light variation; broad damp beige sand; several irregular weathered dark granite rock formations concentrated toward the left and right edges, leaving the center open.\nStyle/medium: high-end natural landscape photography, real optical depth and material texture, not a render or illustration.\nComposition/framing: wide eye-level 35 mm lens view, level horizon at about 42 percent of image height, open central shoreline, usable continuous lower foreground that can be covered by a 3D contact stage, distant features remain plausible during a small camera push and lateral drift.\nLighting/mood: soft late-morning sunlight from upper left, coherent long soft-edged shadows, mild sea haze, restrained cinematic dynamic range, natural exposure and white balance.\nMaterials/textures: fine damp sand variation, wet reflective patches near the waterline, detailed mineral grain and erosion on rocks, translucent wave edges and white foam, realistic cloud volume.\nConstraints: fictional non-distinctive location; no reference images; no people, faces, silhouettes, animals, boats, buildings, roads, signs, brands, logos, writing, watermark, or recognizable landmark; no dramatic fantasy formations; no duplicated rocks; no impossible reflections; no excessive HDR or teal-orange grading; no shallow depth of field; no motion blur; all of sky, sea, sand, and rocks must be clearly readable."
+  },
+  "original": {
+    "width": 1672,
+    "height": 941,
+    "format": "PNG RGB 8-bit",
+    "bytes": 1995809,
+    "sha256": "b242519945029a950533124c2986f55735336ff23faaae71d5db7a68d9a9a284"
+  },
+  "derivative": {
+    "width": 1920,
+    "height": 1080,
+    "format": "lossy WebP VP8",
+    "bytes": 191896,
+    "sha256": "f8f79c043e26da590dd2b927d5160ff3f5e72e7ceb836b699f7febb6880cc1e9",
+    "tool": "cwebp 1.6.0, libsharpyuv 0.4.2",
+    "command": "cwebp -q 92 -m 6 -metadata none -resize 1920 1080 assets/source/iteration-02/shoreline-plate-original.png -o public/assets/environment/shoreline-plate.webp"
+  },
+  "calibration": {
+    "referenceFovDegrees": 35,
+    "horizonNormalizedY": 0.47,
+    "sunDirection": "upper-left, estimated 42 degrees elevation",
+    "referenceColorTemperatureKelvin": 6200,
+    "toneMapping": "ACES Filmic",
+    "safeCameraEnvelopeMeters": {
+      "lateral": 0.65,
+      "depth": 0.35
+    },
+    "handheldLimit": {
+      "translationMeters": 0.018,
+      "rollDegrees": 0.35
+    }
+  },
+  "rights": {
+    "termsTitle": "OpenAI Terms of Use",
+    "termsUrl": "https://openai.com/policies/row-terms-of-use/",
+    "termsEffectiveDate": "2026-01-01",
+    "termsAccessedDate": "2026-08-28",
+    "publicationPolicyUrl": "https://openai.com/policies/sharing-publication-policy/",
+    "receiptPath": "docs/rights-receipts/openai-image-output-terms.md",
+    "receiptSha256": "96213ca33c5c36aec012cde0be0c3bc1d9a9146163fdcef2b146f7c714aa7291",
+    "repositoryLicense": "MIT",
+    "humanLegalReview": "pending"
+  },
+  "visualReview": {
+    "reviewer": "Codex direct visual inspection",
+    "date": "2026-08-28",
+    "found": [],
+    "checked": [
+      "people or faces",
+      "text or watermark",
+      "logo or brand",
+      "building or vehicle",
+      "recognizable landmark",
+      "duplicated prominent rock",
+      "impossible reflection",
+      "obvious protected character or property"
+    ],
+    "status": "accepted_for_technical_prototype"
+  }
+}
