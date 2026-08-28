@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "capture": {
+    "renderer": "Playwright canvas PNG stream to ffmpeg",
+    "frameStart": 0,
+    "frameEnd": 719,
+    "frameCount": 720,
+    "fps": 30,
+    "timeRule": "t = frame / 30",
+    "width": 1920,
+    "height": 1080,
+    "codec": "H.264 / yuv420p / CFR"
+  },
+  "sourceIdentity": {
+    "sha256": "03723e29e6ef1d614d3806ba6efa37d80f6d806b959233344e9d3b8170595368",
+    "files": [
+      {
+        "path": "index.html",
+        "bytes": 1364,
+        "sha256": "990dcc3760513b042e64bee9470534e696c81fda78eeb5e5681c69275bca82b3"
+      },
+      {
+        "path": "package-lock.json",
+        "bytes": 33366,
+        "sha256": "a80892a3f3b9060728aea2703881d7a9cbb3ba01b3c29f2531ef4ae79a6ffebd"
+      },
+      {
+        "path": "package.json",
+        "bytes": 565,
+        "sha256": "dd4985cc6702671a1c26e6863967073d776378fcef548462b0e43e8f96f2792b"
+      },
+      {
+        "path": "src/character.js",
+        "bytes": 10468,
+        "sha256": "37ff20cc760d08e482ef68f8386e80830a783ae70b6dbaa35f854d6c0d2513b7"
+      },
+      {
+        "path": "src/environment.js",
+        "bytes": 17149,
+        "sha256": "cb68b01504bfb925e73db2c9f308d3f42e0a9825a677ea144c5795a362a5193f"
+      },
+      {
+        "path": "src/main.js",
+        "bytes": 9939,
+        "sha256": "2545506809f319a5af34d75026d41a051b70c820c32c97b3f7c4c1e1c2c94140"
+      },
+      {
+        "path": "src/styles.css",
+        "bytes": 2210,
+        "sha256": "2c2458c4da4a4a53c94bca6c72ca6c9978fa5e3bd274a2bac9671fbb01a5c203"
+      },
+      {
+        "path": "src/timeline.js",
+        "bytes": 5268,
+        "sha256": "d8cc844a302f2f12034695ddf53e39c1ce52e018c98ca554b33b6e2ce0527d9c"
+      }
+    ],
+    "combinedSha256": "03723e29e6ef1d614d3806ba6efa37d80f6d806b959233344e9d3b8170595368"
+  },
+  "buildIdentity": {
+    "sha256": "3871697ef3402acdac80b38237babd18be00e8ec417e7eab2d0c53b586f37413",
+    "files": [
+      {
+        "path": "assets/CHARACTER_LICENSE.md",
+        "bytes": 958,
+        "sha256": "0922ec5492dde8a4c1007ccb2473d8d1418e63dc660aa31eb9a4c5ce865297c0"
+      },
+      {
+        "path": "assets/character.vrm",
+        "bytes": 10776032,
+        "sha256": "12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2"
+      },
+      {
+        "path": "assets/environment/ENVIRONMENT_LICENSE.md",
+        "bytes": 676,
+        "sha256": "cee0cbb6777aeba5ca14937a3d443af687bb1630a7fb5e0a3d34611c62cefc1b"
+      },
+      {
+        "path": "assets/environment/shoreline-plate.provenance.json",
+        "bytes": 4547,
+        "sha256": "df2d129f7f83bb6acd8c1d0dcc8eb0a18a2223d589effbf2bf10375df09eface"
+      },
+      {
+        "path": "assets/environment/shoreline-plate.webp",
+        "bytes": 191896,
+        "sha256": "f8f79c043e26da590dd2b927d5160ff3f5e72e7ceb836b699f7febb6880cc1e9"
+      },
+      {
+        "path": "assets/index-DZwz8OZk.css",
+        "bytes": 1731,
+        "sha256": "04f195b8cff02fd31864be0393c5fef966a26b1bbb79c539c306ba76ade300d0"
+      },
+      {
+        "path": "assets/index-wYo_QYdi.js",
+        "bytes": 766343,
+        "sha256": "2140a9c909f7b28754c1ba1b4b3c6d87803364c2494a65b34201072c232546d6"
+      },
+      {
+        "path": "index.html",
+        "bytes": 1463,
+        "sha256": "b44d57b1eee0e56735a43294e750a6259171dd4b842ef20fdb8db18c68be4fac"
+      }
+    ]
+  },
+  "assets": {
+    "plate": {
+      "path": "public/assets/environment/shoreline-plate.webp",
+      "sha256": "f8f79c043e26da590dd2b927d5160ff3f5e72e7ceb836b699f7febb6880cc1e9"
+    },
+    "vrm": {
+      "path": "public/assets/character.vrm",
+      "sha256": "12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2"
+    }
+  },
+  "tools": {
+    "node": "v25.6.0",
+    "npm": "11.8.0",
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "browser": {
+      "name": "Google Chrome",
+      "version": "152.0.7977.64"
+    }
+  },
+  "runtime": {
+    "state": "ready",
+    "systems": {
+      "webgl2": true,
+      "photographicPlate": true,
+      "foregroundSand": true,
+      "movingWater": true,
+      "wetSeam": true,
+      "irregularRocks": true,
+      "fog": true,
+      "shadows": true,
+      "reflectionCue": true,
+      "validVrm": true,
+      "mtoon": true,
+      "nativeOutline": true,
+      "silhouetteShell": true,
+      "animation": true,
+      "cameraTimeline": true
+    },
+    "renderer": {
+      "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+      "vendor": "Google Inc. (Apple)",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)",
+      "quality": "high"
+    },
+    "output": {
+      "cssWidth": 1920,
+      "cssHeight": 1080,
+      "bufferWidth": 1920,
+      "bufferHeight": 1080,
+      "pixelRatio": 1
+    },
+    "character": {
+      "path": "/assets/character.vrm",
+      "validVrm": true,
+      "humanoid": true,
+      "controlledBoneCount": 16,
+      "mtoonMaterialCount": 20,
+      "nativeOutlineMaterialCount": 20,
+      "silhouetteShellMeshCount": 13,
+      "expressionNames": [
+        "aa",
+        "angry",
+        "blink",
+        "blinkLeft",
+        "blinkRight",
+        "ee",
+        "happy",
+        "ih",
+        "lookDown",
+        "lookLeft",
+        "lookRight",
+        "lookUp",
+        "neutral",
+        "oh",
+        "ou",
+        "relaxed",
+        "sad",
+        "surprised"
+      ],
+      "springBoneManager": true,
+      "springJointCount": 57,
+      "authoredSecondarySpring": true,
+      "targetHeightMeters": 1.66,
+      "sourceMeta": {
+        "name": "VRM1_Constraint_Twist_Sample",
+        "version": "v1.0.1",
+        "authors": [
+          "pixiv Inc."
+        ]
+      }
+    },
+    "environment": {
+      "platePath": "/assets/environment/shoreline-plate.webp",
+      "plateCalibration": {
+        "referenceFovDegrees": 35,
+        "horizonNormalizedY": 0.47,
+        "lateralEnvelopeMeters": 0.65,
+        "depthEnvelopeMeters": 0.35
+      },
+      "foregroundSand": true,
+      "movingWater": true,
+      "movingWetSeam": true,
+      "irregularRockCount": 10,
+      "fog": true,
+      "shadows": true,
+      "reflectionCue": true,
+      "contactShadow": true,
+      "shadowMapSize": 2048
+    }
+  },
+  "anchors": [
+    {
+      "frame": 0,
+      "timeSeconds": 0,
+      "label": "establishing",
+      "path": "artifacts/iteration-02/anchors/frame-0000-establishing.png",
+      "sha256": "55fabfa1fe64285e0e37bfbc8e7d2d6f36055e78959f0a537fb3e313fb335140",
+      "pixels": {
+        "width": 1920,
+        "height": 1080,
+        "samples": 32400,
+        "meanLuma": 138.93526786419977,
+        "lumaStandardDeviation": 49.557724542647435,
+        "minimumLuma": 2.7152000000000003,
+        "maximumLuma": 230.9238
+      },
+      "runtime": {
+        "frame": 0,
+        "time": 0,
+        "shot": "environmental-establishing",
+        "state": "ready"
+      }
+    },
+    {
+      "frame": 210,
+      "timeSeconds": 7,
+      "label": "follow",
+      "path": "artifacts/iteration-02/anchors/frame-0210-follow.png",
+      "sha256": "a7946e2d77210da707c7ee5ef58d9863b0496571f6b3d32fb14174e9949814b6",
+      "pixels": {
+        "width": 1920,
+        "height": 1080,
+        "samples": 32400,
+        "meanLuma": 148.90913095061939,
+        "lumaStandardDeviation": 43.43788216685186,
+        "minimumLuma": 7.715199999999999,
+        "maximumLuma": 230.13639999999998
+      },
+      "runtime": {
+        "frame": 210,
+        "time": 7,
+        "shot": "shoreline-follow",
+        "state": "ready"
+      }
+    },
+    {
+      "frame": 390,
+      "timeSeconds": 13,
+      "label": "close-up",
+      "path": "artifacts/iteration-02/anchors/frame-0390-close-up.png",
+      "sha256": "75b4802529f19eb87bd5e458cb20d46e46b7b2817cec998eb6d2ef1e0a6af618",
+      "pixels": {
+        "width": 1920,
+        "height": 1080,
+        "samples": 32400,
+        "meanLuma": 161.44024001852475,
+        "lumaStandardDeviation": 41.64249462598539,
+        "minimumLuma": 3,
+        "maximumLuma": 230.13639999999998
+      },
+      "runtime": {
+        "frame": 390,
+        "time": 13,
+        "shot": "quiet-close-up",
+        "state": "ready"
+      }
+    },
+    {
+      "frame": 480,
+      "timeSeconds": 16,
+      "label": "quiet-gaze",
+      "path": "artifacts/iteration-02/anchors/frame-0480-quiet-gaze.png",
+      "sha256": "769ef4bda34b46250231d63c645e0443ba20376eb244165ae747ab3d4baee5a6",
+      "pixels": {
+        "width": 1920,
+        "height": 1080,
+        "samples": 32400,
+        "meanLuma": 154.09177903086146,
+        "lumaStandardDeviation": 41.96759066075867,
+        "minimumLuma": 4.715199999999999,
+        "maximumLuma": 230.9238
+      },
+      "runtime": {
+        "frame": 480,
+        "time": 16,
+        "shot": "gaze-beat",
+        "state": "ready"
+      }
+    },
+    {
+      "frame": 690,
+      "timeSeconds": 23,
+      "label": "return",
+      "path": "artifacts/iteration-02/anchors/frame-0690-return.png",
+      "sha256": "99de4e2d97d72bbe61fdb84905b8668dfb4233e1de11c7578d3a8412568e9f2a",
+      "pixels": {
+        "width": 1920,
+        "height": 1080,
+        "samples": 32400,
+        "meanLuma": 140.1790650370404,
+        "lumaStandardDeviation": 49.65446754260688,
+        "minimumLuma": 2.7874000000000003,
+        "maximumLuma": 230.13639999999998
+      },
+      "runtime": {
+        "frame": 690,
+        "time": 23,
+        "shot": "environmental-pullback",
+        "state": "ready"
+      }
+    }
+  ],
+  "contactSheet": {
+    "path": "artifacts/iteration-02/contact-sheet.png",
+    "sha256": "f64f65417ca7b7931685f363df733501a9d32f2f4d19aa22a4d3fe095a741283"
+  },
+  "video": {
+    "path": "artifacts/iteration-02/shoreline-loop.mp4",
+    "sha256": "70c492941289cbb15d756e25202a617349019afa8ba83d242a6941c4a2c68623",
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "24.000000",
+          "nb_read_frames": "720"
+        }
+      ],
+      "format": {
+        "duration": "24.000000"
+      }
+    }
+  },
+  "browserIssues": [],
+  "loopContinuity": {
+    "pureTimelineStartEqualsEnd": true,
+    "verifiedBy": "tests/timeline.test.mjs"
+  }
+}

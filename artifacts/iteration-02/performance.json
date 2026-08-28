@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "target": {
+    "width": 1920,
+    "height": 1080,
+    "minimumEffectiveFps": 30,
+    "maximumP95FrameDeltaMs": 33.4,
+    "maximumPostWarmupStallMs": 100
+  },
+  "runs": [
+    {
+      "quality": "high",
+      "browser": {
+        "name": "Google Chrome",
+        "version": "152.0.7977.64"
+      },
+      "runtime": {
+        "renderer": {
+          "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+          "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)",
+          "quality": "high"
+        },
+        "output": {
+          "cssWidth": 1920,
+          "cssHeight": 1080,
+          "bufferWidth": 1920,
+          "bufferHeight": 1080,
+          "pixelRatio": 1
+        }
+      },
+      "warmupFrames": 120,
+      "sampleFrames": 360,
+      "meanFrameDeltaMs": 16.66583333333333,
+      "p95FrameDeltaMs": 16.799999999999272,
+      "maximumFrameDeltaMs": 16.800000000000182,
+      "effectiveFps": 60.00300015000751,
+      "postWarmupStallsOver100Ms": 0,
+      "meets1080pTarget": true,
+      "issues": []
+    }
+  ],
+  "correction": {
+    "applied": false,
+    "reason": "High quality met the 1080p target."
+  },
+  "passed": true
+}

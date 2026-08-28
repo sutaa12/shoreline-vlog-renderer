@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path fill=%22%238cc3d2%22 d=%22M0 0h32v18H0z%22/><path fill=%22%23d7c19d%22 d=%22M0 18h32v14H0z%22/><path fill=%22%234b747d%22 d=%22M0 15q8 4 16 0t16 0v6H0z%22/></svg>" />
+    <meta
+      name="description"
+      content="A deterministic Three.js shoreline character vignette."
+    />
+    <title>Quiet Shoreline</title>
+  </head>
+  <body>
+    <main id="app" aria-label="Quiet Shoreline cinematic">
+      <canvas id="shoreline-canvas" aria-label="Rendered shoreline scene"></canvas>
+      <section id="status" class="status" role="status" aria-live="polite">
+        <p class="status__eyebrow">Quiet Shoreline</p>
+        <h1 id="status-title">Loading scene</h1>
+        <p id="status-message">Preparing the coast and character…</p>
+        <p id="status-detail" class="status__detail"></p>
+      </section>
+      <aside class="disclosure">
+        <span>24-second browser-rendered loop</span>
+        <span>AI-generated distant shoreline plate</span>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

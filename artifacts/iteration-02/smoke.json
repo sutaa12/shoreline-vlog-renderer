@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "browser": {
+    "name": "Google Chrome",
+    "version": "152.0.7977.64"
+  },
+  "scenarios": [
+    {
+      "name": "ready",
+      "expectedState": "ready",
+      "runtime": {
+        "state": "ready",
+        "message": "The shoreline loop is running.",
+        "detail": "",
+        "frame": 0,
+        "time": 0,
+        "shot": "environmental-establishing",
+        "capture": {
+          "enabled": true,
+          "fps": 30,
+          "frameCount": 720,
+          "durationSeconds": 24,
+          "rule": "t = frame / 30"
+        },
+        "systems": {
+          "webgl2": true,
+          "photographicPlate": true,
+          "foregroundSand": true,
+          "movingWater": true,
+          "wetSeam": true,
+          "irregularRocks": true,
+          "fog": true,
+          "shadows": true,
+          "reflectionCue": true,
+          "validVrm": true,
+          "mtoon": true,
+          "nativeOutline": true,
+          "silhouetteShell": true,
+          "animation": true,
+          "cameraTimeline": true
+        },
+        "diagnostics": {
+          "output": {
+            "cssWidth": 1920,
+            "cssHeight": 1080,
+            "bufferWidth": 1920,
+            "bufferHeight": 1080,
+            "pixelRatio": 1
+          },
+          "renderer": {
+            "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+            "vendor": "Google Inc. (Apple)",
+            "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)",
+            "quality": "high"
+          },
+          "environment": {
+            "platePath": "/assets/environment/shoreline-plate.webp",
+            "plateCalibration": {
+              "referenceFovDegrees": 35,
+              "horizonNormalizedY": 0.47,
+              "lateralEnvelopeMeters": 0.65,
+              "depthEnvelopeMeters": 0.35
+            },
+            "foregroundSand": true,
+            "movingWater": true,
+            "movingWetSeam": true,
+            "irregularRockCount": 10,
+            "fog": true,
+            "shadows": true,
+            "reflectionCue": true,
+            "contactShadow": true,
+            "shadowMapSize": 2048
+          },
+          "character": {
+            "path": "/assets/character.vrm",
+            "validVrm": true,
+            "humanoid": true,
+            "controlledBoneCount": 16,
+            "mtoonMaterialCount": 20,
+            "nativeOutlineMaterialCount": 20,
+            "silhouetteShellMeshCount": 13,
+            "expressionNames": [
+              "aa",
+              "angry",
+              "blink",
+              "blinkLeft",
+              "blinkRight",
+              "ee",
+              "happy",
+              "ih",
+              "lookDown",
+              "lookLeft",
+              "lookRight",
+              "lookUp",
+              "neutral",
+              "oh",
+              "ou",
+              "relaxed",
+              "sad",
+              "surprised"
+            ],
+            "springBoneManager": true,
+            "springJointCount": 57,
+            "authoredSecondarySpring": true,
+            "targetHeightMeters": 1.66,
+            "sourceMeta": {
+              "name": "VRM1_Constraint_Twist_Sample",
+              "version": "v1.0.1",
+              "authors": [
+                "pixiv Inc."
+              ]
+            }
+          },
+          "camera": {
+            "shot": "environmental-establishing",
+            "position": [
+              0.05,
+              2.38,
+              5.65
+            ],
+            "target": [
+              -0.1,
+              0.95,
+              -0.25
+            ],
+            "fov": 42,
+            "shakeTranslation": [
+              0,
+              0,
+              0
+            ],
+            "shakeRollRadians": 0
+          }
+        },
+        "warnings": [],
+        "errors": []
+      },
+      "issues": [],
+      "advanced": {
+        "frame": 719,
+        "time": 23.966666666666665,
+        "shot": "environmental-pullback"
+      }
+    },
+    {
+      "name": "blocked-photographic-plate",
+      "expectedState": "degraded",
+      "runtime": {
+        "state": "degraded",
+        "message": "The real 3D foreground is running with a calibration fallback. Capture evidence is not valid in this state.",
+        "detail": "/assets/environment/shoreline-plate.webp",
+        "frame": 0,
+        "time": 0,
+        "shot": "environmental-establishing",
+        "capture": {
+          "enabled": true,
+          "fps": 30,
+          "frameCount": 720,
+          "durationSeconds": 24,
+          "rule": "t = frame / 30"
+        },
+        "systems": {
+          "webgl2": true,
+          "photographicPlate": false,
+          "foregroundSand": true,
+          "movingWater": true,
+          "wetSeam": true,
+          "irregularRocks": true,
+          "fog": true,
+          "shadows": true,
+          "reflectionCue": true,
+          "validVrm": true,
+          "mtoon": true,
+          "nativeOutline": true,
+          "silhouetteShell": true,
+          "animation": true,
+          "cameraTimeline": true
+        },
+        "diagnostics": {
+          "output": {
+            "cssWidth": 1920,
+            "cssHeight": 1080,
+            "bufferWidth": 1920,
+            "bufferHeight": 1080,
+            "pixelRatio": 1
+          },
+          "renderer": {
+            "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+            "vendor": "Google Inc. (Apple)",
+            "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)",
+            "quality": "high"
+          },
+          "environment": {
+            "platePath": "/assets/environment/shoreline-plate.webp",
+            "plateCalibration": {
+              "referenceFovDegrees": 35,
+              "horizonNormalizedY": 0.47,
+              "lateralEnvelopeMeters": 0.65,
+              "depthEnvelopeMeters": 0.35
+            },
+            "foregroundSand": true,
+            "movingWater": true,
+            "movingWetSeam": true,
+            "irregularRockCount": 10,
+            "fog": true,
+            "shadows": true,
+            "reflectionCue": true,
+            "contactShadow": true,
+            "shadowMapSize": 2048
+          },
+          "character": {
+            "path": "/assets/character.vrm",
+            "validVrm": true,
+            "humanoid": true,
+            "controlledBoneCount": 16,
+            "mtoonMaterialCount": 20,
+            "nativeOutlineMaterialCount": 20,
+            "silhouetteShellMeshCount": 13,
+            "expressionNames": [
+              "aa",
+              "angry",
+              "blink",
+              "blinkLeft",
+              "blinkRight",
+              "ee",
+              "happy",
+              "ih",
+              "lookDown",
+              "lookLeft",
+              "lookRight",
+              "lookUp",
+              "neutral",
+              "oh",
+              "ou",
+              "relaxed",
+              "sad",
+              "surprised"
+            ],
+            "springBoneManager": true,
+            "springJointCount": 57,
+            "authoredSecondarySpring": true,
+            "targetHeightMeters": 1.66,
+            "sourceMeta": {
+              "name": "VRM1_Constraint_Twist_Sample",
+              "version": "v1.0.1",
+              "authors": [
+                "pixiv Inc."
+              ]
+            }
+          },
+          "camera": {
+            "shot": "environmental-establishing",
+            "position": [
+              0.05,
+              2.38,
+              5.65
+            ],
+            "target": [
+              -0.1,
+              0.95,
+              -0.25
+            ],
+            "fov": 42,
+            "shakeTranslation": [
+              0,
+              0,
+              0
+            ],
+            "shakeRollRadians": 0
+          }
+        },
+        "warnings": [
+          {
+            "severity": "degraded",
+            "asset": "/assets/environment/shoreline-plate.webp",
+            "message": "[object Event]"
+          }
+        ],
+        "errors": []
+      },
+      "issues": [
+        {
+          "type": "console",
+          "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+        }
+      ],
+      "unexpectedIssues": []
+    },
+    {
+      "name": "blocked-vrm",
+      "expectedState": "fatal",
+      "runtime": {
+        "state": "fatal",
+        "message": "The required VRM character could not be loaded. Check the asset and reload.",
+        "detail": "/assets/character.vrm",
+        "frame": 0,
+        "time": 0,
+        "shot": "environmental-establishing",
+        "capture": {
+          "enabled": true,
+          "fps": 30,
+          "frameCount": 720,
+          "durationSeconds": 24,
+          "rule": "t = frame / 30"
+        },
+        "systems": {
+          "webgl2": true,
+          "photographicPlate": false,
+          "foregroundSand": true,
+          "movingWater": true,
+          "wetSeam": true,
+          "irregularRocks": true,
+          "fog": true,
+          "shadows": true,
+          "reflectionCue": true,
+          "validVrm": false,
+          "mtoon": false,
+          "nativeOutline": false,
+          "silhouetteShell": false,
+          "animation": false,
+          "cameraTimeline": false
+        },
+        "diagnostics": {
+          "output": {
+            "cssWidth": 1920,
+            "cssHeight": 1080,
+            "bufferWidth": 1920,
+            "bufferHeight": 1080,
+            "pixelRatio": 1
+          },
+          "renderer": {
+            "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+            "vendor": "Google Inc. (Apple)",
+            "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)",
+            "quality": "high"
+          },
+          "environment": {
+            "platePath": "/assets/environment/shoreline-plate.webp",
+            "plateCalibration": {
+              "referenceFovDegrees": 35,
+              "horizonNormalizedY": 0.47,
+              "lateralEnvelopeMeters": 0.65,
+              "depthEnvelopeMeters": 0.35
+            },
+            "foregroundSand": true,
+            "movingWater": true,
+            "movingWetSeam": true,
+            "irregularRockCount": 10,
+            "fog": true,
+            "shadows": true,
+            "reflectionCue": true,
+            "contactShadow": true,
+            "shadowMapSize": 2048
+          }
+        },
+        "warnings": [],
+        "errors": [
+          {
+            "severity": "fatal",
+            "asset": "/assets/character.vrm",
+            "message": "VRM asset failed to load: /assets/character.vrm"
+          }
+        ]
+      },
+      "issues": [
+        {
+          "type": "console",
+          "text": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT.Inspector"
+        }
+      ],
+      "unexpectedIssues": []
+    }
+  ],
+  "passed": true
+}
