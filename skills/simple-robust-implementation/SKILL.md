@@ -20,8 +20,10 @@ Return one explicit state before doing the rest of the workflow:
 - `CONSTRAINED_PLAN_SCORE`: verified user, vendor, platform, rights, or safety
   constraints leave fewer than three viable shapes. Record the excluded shapes
   and constraint evidence with source, revision or date, section, stable
-  location or digest, claim, and exclusion. Then score the remaining admissible
-  plan; do not invent alternatives or block a valid mandatory architecture.
+  location or digest, claim, and exclusion. Enumerate and score every remaining
+  admissible shape, either one or two, adopt the highest-scoring shape, and use
+  the standard simplicity tie-break. Do not invent alternatives or block a
+  valid mandatory architecture.
 - `COMPLETION_SCORE`: current implementation, dependency, test, and runtime
   artifacts are available for a 0-100 completion score.
 - `EVIDENCE_BLOCKED`: plan or completion artifacts are missing or stale. List
@@ -44,6 +46,28 @@ score before implementation. Name which categories require independent review,
 what artifacts hide source and self-score from that reviewer, and whether any
 open S0-S2 finding blocks adoption.
 
+## Prove the riskiest path before expansion
+
+For large work, identify the locked requirement whose failure would cause the
+most rework. Before building the complete surface, run the smallest
+representative end-to-end feasibility spike that can prove or disprove the
+selected design's ability to meet that requirement. This is a checkpoint inside
+the selected option, not a fourth design option.
+
+Freeze the spike's hypothesis, representative inputs, observable output,
+independent evidence when perception matters, pass threshold, and maximum files,
+dependencies, and elapsed effort. Exercise the real causal path; a mock,
+placeholder, isolated shader sample, numeric proxy, or self-score cannot prove a
+product-level visual, motion, audio, or interaction claim. Keep only the spike
+surface needed by the selected design after it passes.
+
+If the spike misses a mandatory threshold or exposes an S0-S2 shape risk, stop
+expansion and rescore the plan. Resolve a bounded local defect only when evidence
+shows the representation can meet the requirement. Otherwise route to a new
+large-design selection under the central three-option or constrained-option rule
+below, or return `DESIGN_BLOCKED`. Do not defer a disproved core assumption to
+later polish.
+
 Classify a decision as large when its chosen shape materially affects the
 architecture and any of these is true:
 
@@ -59,12 +83,13 @@ itself. Do not manufacture alternatives for smaller work.
 ## Choose a large design from three options
 
 Produce exactly three viable options only for an initial large-plan selection or
-when a score of 60 or below requires replacing the implementation shape. Make
-the options meaningfully different, never one preferred option and two
-strawmen. Include the simplest direct option, a balanced option, and a
-specialized option only when all three can actually meet the contract. If three
-do not exist, use `CONSTRAINED_PLAN_SCORE` only when authoritative constraints
-prove why; otherwise return `DESIGN_BLOCKED`.
+when any rule in this skill requires a large implementation-shape replacement,
+including a score of 60 or below, a failed feasibility spike, or exhausted local
+perceptual tuning. Make the options meaningfully different, never one preferred
+option and two strawmen. Include the simplest direct option, a balanced option,
+and a specialized option only when all three can actually meet the contract. If
+three do not exist, use `CONSTRAINED_PLAN_SCORE` only when authoritative
+constraints prove why; otherwise return `DESIGN_BLOCKED`.
 
 Score all three with the rubric below. Reject an option before scoring if it
 cannot satisfy an explicit requirement, relies on unverified rights or external
@@ -172,6 +197,19 @@ An independently failed perceptual gate follows the same cycle limit. Once the
 authorized cycles are exhausted, preserve the rejected evidence and move to a
 new implementation shape or report the blocker; do not grant an extra cycle by
 relying on the implementer's higher self-score.
+
+When an independent reviewer scores a mandatory perceptual category from 0 to
+2, the next receipt must classify the cause as either a bounded local defect or
+a representation/architecture defect and cite the evidence for that choice. At
+most one local correction cycle may test that diagnosis. If the same mandatory
+category remains from 0 to 2 in the next independent review, local tuning for
+that category is exhausted: remaining cycles cannot repeat constant changes,
+shader or material retuning, amplitude increases, extra overlays, or additional
+keyframes on the same representation. Select a materially different
+evidence-producing shape through the central large-design selection rule, or
+preserve the rejection. This rule applies even when each local edit looks
+individually small.
+
 A cycle count resets only after a new large-design selection materially changes
 the architecture or evidence-producing approach and starts from the frozen
 baseline. Renaming an option, moving files, restyling the same surface, or making
@@ -202,6 +240,10 @@ options when required, score breakdown, selected design, required refactors,
 verification results, remaining risks, and the next gate. Keep the report
 proportional to the decision; the gate should remove complexity, not become a
 second project.
+
+For large work, also return the feasibility-spike hypothesis, budget, evidence,
+verdict, and whether the result permits expansion or requires a new design
+selection.
 
 When independent review is required, also return the implementer self-score,
 independent category scores and findings, the controlling effective score, any
