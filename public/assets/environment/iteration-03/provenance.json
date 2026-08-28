@@ -1,0 +1,45 @@
+{
+  "asset": "shoreline-plate.webp",
+  "purpose": "Original photographic environment plate for Iteration 03",
+  "generated_at": "2026-08-28T10:43:00+09:00",
+  "provider": "OpenAI",
+  "tool": "Codex built-in imagegen",
+  "model_version": "Not exposed by the generation tool",
+  "output_identifier": "exec-73438db8-1b24-4af7-a302-1ba6e4264538",
+  "reference_images_supplied": false,
+  "prompt": "Create one original, reference-free, ultra-photorealistic 16:9 cinematic coastal panorama for use as a projected environment plate in a real-time Three.js scene. Scene: a quiet rugged Pacific-like but entirely fictional shoreline at late afternoon under bright thin overcast, with one coherent soft sun direction from upper left, neutral-warm daylight, realistic atmospheric depth, a level ocean horizon in the upper third, moving-looking small natural wave structure and pale surf in the mid-distance, a broad expanse of detailed damp-to-dry sand in the foreground, naturally irregular weathered dark-gray granite formations concentrated at the far right and outer edges, and smaller believable stones along the margins. Leave the central foreground and center-left open and uncluttered for a full-body animated character and contact shadow. Use a natural diagonal shoreline so there is no conspicuous straight horizontal wet/dry seam. Full depth of field, physically plausible exposure and colors, fine sand and rock microdetail, soft contact shadows, subtle haze, realistic water Fresnel and reflections, no stylized low-poly forms. Camera at roughly 1.6 m eye height, 32 mm full-frame-equivalent lens, straight horizon, restrained documentary composition suitable for gentle bounded follow/zoom/handheld camera motion. No people, no characters, no animals, no buildings, no boats, no text, no signs, no brands, no logos, no famous or identifiable landmark, no protected visual reference, no dramatic fantasy elements, no excessive teal-orange grade, no vignette, no frame, no watermark. The result must read as one convincing photograph, not concept art or a 3D render.",
+  "negative_constraints": [
+    "no reference image",
+    "no people or characters",
+    "no brands, logos, text, or watermark",
+    "no famous or identifiable landmark",
+    "no protected visual reference"
+  ],
+  "source": {
+    "repository_path": "assets/source/iteration-03/shoreline-plate-original.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "67e2cf41c915e4e0101ed1f96eece0ad92e1f00c9cad6bba8b59cd9bb282d457"
+  },
+  "derivatives": [
+    {
+      "path": "assets/source/iteration-03/shoreline-plate-cropped.png",
+      "operation": "sips -c 936 1664 shoreline-plate-original.png --out shoreline-plate-cropped.png",
+      "width": 1664,
+      "height": 936,
+      "sha256": "cde4dafaabb9ffcf6d39f17c256f106cd5e0a5e1feb448f6b911c7a7008baaf2"
+    },
+    {
+      "path": "public/assets/environment/iteration-03/shoreline-plate.webp",
+      "operation": "cwebp 1.6.0 -quiet -q 94 -metadata none shoreline-plate-cropped.png -o shoreline-plate.webp",
+      "width": 1664,
+      "height": 936,
+      "sha256": "ce16e6892f7a7c369e73390a23fe1043f68446c3a565bd96a853d53e386d9fed"
+    }
+  ],
+  "terms_receipt": "docs/rights-receipts/openai-image-output-terms-iteration-03.md",
+  "terms_receipt_sha256": "c61a75cc46d020296deecc8ee4e2054e5784ddc18f54d1d3d7b46dea9d377a93",
+  "intended_use": "Public source repository, browser-rendered prototype, captured comparison video, and project summary",
+  "ai_disclosure_required": true,
+  "human_legal_review": "RIGHTS_PENDING"
+}
