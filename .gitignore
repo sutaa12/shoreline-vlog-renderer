@@ -1,9 +1,10 @@
 node_modules/
 dist/
 coverage/
+test-results/
+playwright-report/
 artifacts/captures/*.mp4
 artifacts/captures/*.mov
 artifacts/captures/frames/
 .DS_Store
 *.log
-
