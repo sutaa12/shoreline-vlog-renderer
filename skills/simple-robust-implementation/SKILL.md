@@ -38,6 +38,12 @@ Before scoring, list the goal, locked requirements, evidence needed for each
 requirement, and the files or systems in scope. Treat user-selected technology
 and external approval boundaries as constraints, not as complexity to delete.
 
+When the contract contains mandatory visual, motion, audio, interaction, or
+other perceptual quality categories, freeze their artifact rubric and minimum
+score before implementation. Name which categories require independent review,
+what artifacts hide source and self-score from that reviewer, and whether any
+open S0-S2 finding blocks adoption.
+
 Classify a decision as large when its chosen shape materially affects the
 architecture and any of these is true:
 
@@ -102,13 +108,37 @@ external-approval dependency blocks adoption regardless of the numeric score.
 State every deduction and the artifact that caused it; do not tune the number to
 reach a desired verdict.
 
+A numeric implementation pass never closes a named external gate. Human
+research or audience testing, accessibility sign-off, engine acceptance, store
+review, legal review, account action, deployment, and publication remain
+separate evidence states. If the frozen contract makes one a release
+requirement, missing evidence blocks that gate without pretending the
+implementation itself failed.
+
 Scores from 79 through 82 are borderline. Require a second independent score
 from the same frozen contract and evidence packet. Pass only when both scores
 are at least 81; otherwise resolve the cited evidence difference or refactor.
 
+An implementer may record a self-score for perceptual categories, but cannot
+self-certify a mandatory perceptual gate. An independent artifact-only reviewer
+must control those categories using the frozen rubric without seeing source,
+branch history, earlier candidates, or the implementer's score. If that review
+places any mandatory category below its minimum or leaves an S0-S2 finding open,
+cap the effective completion score at 70 and reject adoption even when the raw
+simplicity score exceeds 80. Preserve both scores and a short dissent receipt;
+the lower gate controls until new implementation evidence is reviewed.
+
 At the completion gate, inspect the actual dependency graph, state ownership,
 control flow, failure paths, tests, and runtime evidence. Do not reuse the plan
 score as the implementation score.
+
+Validate observable continuity rather than only pure timeline equality. For a
+looped or resumed output with stateful animation, physics, smoothing, particles,
+audio, or caches, inspect repeated sequential playback across the encoded last
+sample to first sample after normal warm-up. A calculation that maps both ends
+to the same nominal timeline value does not prove continuity of history-bearing
+state. Treat a visible or audible boundary snap in a locked loop as a missing
+requirement and score it at the severity defined by the frozen contract.
 
 Use stable counts when comparing implementation shape:
 
@@ -138,6 +168,14 @@ unrelated cleanup.
 Repeat for at most three safe refactor cycles. Stop earlier when the score is at
 least 81. If it remains at 80 or below, identify the exact locked constraint,
 missing evidence, or authority needed; never relabel the result as passing.
+An independently failed perceptual gate follows the same cycle limit. Once the
+authorized cycles are exhausted, preserve the rejected evidence and move to a
+new implementation shape or report the blocker; do not grant an extra cycle by
+relying on the implementer's higher self-score.
+A cycle count resets only after a new large-design selection materially changes
+the architecture or evidence-producing approach and starts from the frozen
+baseline. Renaming an option, moving files, restyling the same surface, or making
+another local revision does not reset the count.
 
 Record every cycle with this compact receipt:
 
@@ -164,3 +202,8 @@ options when required, score breakdown, selected design, required refactors,
 verification results, remaining risks, and the next gate. Keep the report
 proportional to the decision; the gate should remove complexity, not become a
 second project.
+
+When independent review is required, also return the implementer self-score,
+independent category scores and findings, the controlling effective score, any
+dissent between them, reviewer-isolation statement, cycle count, and adoption
+verdict.
