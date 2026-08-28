@@ -1,15 +1,53 @@
 {
-  "blind_reviews": [],
+  "blind_reviews": [
+    {
+      "id": "ITERATION-03-CYCLE-3",
+      "independent": true,
+      "isolation": {
+        "artifact_only": true,
+        "shared_implementation_context": false
+      },
+      "report_artifact": "../evaluations/iteration-03/blind-review-cycle-3.md",
+      "result": "REJECT_AFTER_CYCLE_LIMIT",
+      "effective_score": 70,
+      "findings": [
+        {
+          "id": "VISUAL-INTEGRATION",
+          "severity": "S2",
+          "status": "open",
+          "description": "The outlined toon character and foot contact remain visibly separate from the photographic coast."
+        },
+        {
+          "id": "ANIMATION-LIFE",
+          "severity": "S2",
+          "status": "open",
+          "description": "The normal-speed performance remains too sparse and mechanically posed for the required believable loop."
+        },
+        {
+          "id": "PACKET-WEBM",
+          "severity": "S3",
+          "status": "open",
+          "description": "The final neutral packet hash list names a WebM that is not included in the curated publication packet; the MP4 remains verifiable."
+        }
+      ],
+      "reviewer_tier": "independent-artifact-reviewer"
+    }
+  ],
   "gates": [
     {
       "criteria": [
         "Locked product requirements, scoring thresholds, iteration isolation, asset rights, and rollback are explicit"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "documentation",
+          "description": "Specification tag spec-v1 and hash-pinned source-of-truth records"
+        }
+      ],
       "id": "G0",
       "name": "Specification baseline",
-      "rollback_condition": "Return to the signed specification tag if an implementation branch changes locked requirements",
-      "status": "pending"
+      "rollback_condition": "Return to tag spec-v1 if an implementation branch changes locked requirements",
+      "status": "passed"
     },
     {
       "criteria": [
@@ -17,56 +55,111 @@
         "Plan and completed-artifact scores trigger refactoring at 80 or below",
         "Large designs compare exactly three viable options"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "command",
+          "command": "quick_validate.py skills/simple-robust-implementation",
+          "exit_code": 0,
+          "description": "Skill v5 passed structural validation, five fresh red-team packets, and a new ephemeral Codex session"
+        }
+      ],
       "id": "G1",
       "name": "Skill validation",
-      "rollback_condition": "Keep the skill project-local and do not add it to global guidance when behavioral tests fail",
-      "status": "pending"
+      "rollback_condition": "Remove the global guidance entry and reinstall the last accepted skill tag if fresh-session routing regresses",
+      "status": "passed"
     },
     {
       "criteria": [
         "Each attempt starts from the specification tag without prior implementation context",
         "Selected attempt builds and passes deterministic runtime smoke checks",
-        "Completed implementation scores at least 81"
+        "Completed implementation scores at least 81 after controlling independent gates"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "technical-receipt",
+          "artifact": "../evaluations/iteration-03/receipt.md",
+          "description": "Technical path passes, raw self-score is 94, independent effective score is capped at 70",
+          "error_counts": {
+            "S0": 0,
+            "S1": 0,
+            "S2": 1,
+            "S3": 0
+          }
+        }
+      ],
       "id": "G2",
       "name": "Independent implementations",
-      "rollback_condition": "Discard the current attempt and restore the last accepted branch or specification tag",
-      "status": "pending"
+      "rollback_condition": "Preserve the rejected branch and return to spec-v1 for a new representation rather than another local-tuning cycle",
+      "status": "failed"
     },
     {
       "criteria": [
         "Browser capture covers every required cinematic beat",
         "Independent artifact-only review has no unresolved S0-S2 finding",
-        "The accepted video is synchronized to Dropbox"
+        "The reviewed video is synchronized to Dropbox"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "capture",
+          "artifact": "../artifacts/iteration-03/two-cycles-48s.mp4",
+          "sha256": "cfebea638ea91af0b40b981d2937ada08a8828f5bd7db778608cb445761932c4",
+          "description": "48.000-second technical capture; rejected by the final independent visual gate"
+        },
+        {
+          "kind": "dropbox-receipt",
+          "artifact": "../artifacts/iteration-03/dropbox-upload.json",
+          "description": "Dropbox copy verified by remote path, byte size, and matching SHA-256; no shared link"
+        }
+      ],
       "id": "G3",
       "name": "Capture and independent review",
-      "rollback_condition": "Withdraw the rejected capture and retain the most recent accepted media artifact",
-      "status": "pending"
+      "rollback_condition": "Do not present the synchronized video as accepted; retain it only as rejected technical evidence",
+      "status": "failed"
     },
     {
       "criteria": [
-        "Public GitHub source matches the accepted commit",
-        "Sites summary compares the attempts and its main flow works",
-        "Published artifact and rollback identity are recorded"
+        "Public GitHub retains the locked specification, skill versions, and all three implementation branches",
+        "Sites compares all attempts and clearly separates technical, visual, human, and rights states",
+        "Publication identity, access state, smoke checks, and rollback references are recorded"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "kind": "github",
+          "url": "https://github.com/sutaa12/shoreline-vlog-renderer",
+          "description": "Public source repository with isolated branches and skill-v5 tag"
+        },
+        {
+          "kind": "sites-deployment",
+          "artifact": "../artifacts/iteration-03/sites-publication.json",
+          "description": "Owner-only Sites version 1 passed live desktop, mobile-width, image, interaction, and origin-log checks"
+        }
+      ],
       "id": "G4",
-      "name": "Verified publication",
-      "rollback_condition": "Redeploy the previous accepted Sites version and preserve the earlier Git tag",
-      "status": "pending"
+      "name": "Verified evidence publication",
+      "rollback_condition": "Redeploy the prior Sites version if a later summary breaks or changes gate truth",
+      "status": "passed"
     }
   ],
-  "human_gates": [],
+  "human_gates": [
+    {
+      "id": "HUMAN-VISUAL",
+      "name": "Human visual acceptance",
+      "status": "pending",
+      "result": "HUMAN_PENDING"
+    },
+    {
+      "id": "HUMAN-RIGHTS",
+      "name": "Human legal and rights acceptance",
+      "status": "pending",
+      "result": "RIGHTS_PENDING"
+    }
+  ],
   "known_risks": [
     {
       "description": "AI review cannot establish human-perceived visual quality or comfort",
       "evidence": [
         {
-          "description": "The rubric keeps human visual acceptance separate from automated gates",
+          "description": "The rubric and published report keep human visual acceptance separate from automated gates",
           "kind": "documentation"
         }
       ],
@@ -77,43 +170,49 @@
   ],
   "project": "Shoreline Vlog Renderer",
   "release": {
-    "build_identity": null,
+    "build_identity": "Sites version 1 from summary commit e0f556b60dfdd1f5bf5b306b855f5f47fdb01d2c",
     "integrity": {},
     "request_verdict": false,
     "scope": "prototype",
     "smoke_test": {
-      "evidence": [],
-      "status": "pending"
+      "evidence": [
+        "Live owner-only Sites route, three comparison tabs, three images, 390px no-overflow layout, and zero site-origin console errors or warnings"
+      ],
+      "status": "passed"
     },
-    "url": null
+    "url": "https://shoreline-vlog-field-report.narinarinari.chatgpt.site/"
   },
   "rollback": {
-    "artifact": null,
-    "instructions": null
+    "artifact": "git tag iteration-03-technical-rejected",
+    "instructions": "Restore spec-v1 for a new implementation or keep iteration-03-technical-rejected as non-adopted evidence; Sites version 1 is the first published summary version."
   },
   "schema_version": "quality-gates.v3",
   "severity_counts": {
     "S0": 0,
     "S1": 0,
-    "S2": 0,
-    "S3": 1
+    "S2": 3,
+    "S3": 2
   },
   "source_of_truth": [
     {
       "label": "Product specification",
-      "location": "docs/product-spec.md"
+      "location": "../docs/product-spec.md",
+      "sha256": "8082cd93c0c99b803cc887f2a5d8af86692886d8585dc89b7e2e79bcb9f191f9"
     },
     {
       "label": "Quality rubric",
-      "location": "docs/quality-rubric.md"
+      "location": "../docs/quality-rubric.md",
+      "sha256": "04ef64f9c6bd15d6340c4778ca957450987059b5dab5a4757ab6133119038036"
     },
     {
       "label": "Iteration protocol",
-      "location": "docs/iteration-protocol.md"
+      "location": "../docs/iteration-protocol.md",
+      "sha256": "b9cf8f983a547ab6b6c52d2fabef9000c190e464c7877b9efe31aeef635ab6d6"
     },
     {
       "label": "Asset rights ledger",
-      "location": "docs/asset-rights.md"
+      "location": "../docs/asset-rights.md",
+      "sha256": "d5836120fb509a35fdb34b0d95ccde07a30ae1ecf8962422bcb89cfa08aebb70"
     }
   ]
 }

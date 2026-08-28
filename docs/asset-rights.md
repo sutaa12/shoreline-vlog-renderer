@@ -11,5 +11,22 @@ redistribution status, required attribution, and verification evidence.
 | Environment textures/HDRI | Procedural shaders and generated geometry only | Repository code license and dependency licenses | No standalone third-party image asset | None | Build source and lockfile | Accepted |
 | Audio | No audio is required for the prototype | Not applicable | Not distributed | None | Product specification | Closed |
 
-Code dependencies are recorded by package name, exact lockfile version, and
-upstream license after installation.
+## Code dependencies
+
+`package-lock.json` is the version authority. The installed graph contains five
+direct packages and 31 physically installed transitive packages; the lockfile
+also records 80 platform-inclusive package entries. `npm ci` reported no known
+vulnerabilities at technical acceptance.
+
+| Direct package | Version | Use | License |
+| --- | --- | --- | --- |
+| `three` | 0.185.1 | Runtime renderer and scene graph | MIT |
+| `@pixiv/three-vrm` | 3.5.5 | Runtime VRM loader, MToon, humanoid, and spring update | MIT |
+| `vite` | 8.2.2 | Production build and preview server | MIT |
+| `typescript` | 7.0.2 | Source checking | Apache-2.0 |
+| `@playwright/test` | 1.62.1 | Browser acceptance and evidence capture | Apache-2.0 |
+
+Across the 80 lockfile package entries, declared licenses are MIT (41),
+Apache-2.0 (25), MPL-2.0 (12), ISC (1), and BSD-3-Clause (1). No dependency is
+an environment image, texture pack, HDRI, animation library, UI framework,
+physics engine, state framework, or runtime service.

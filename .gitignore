@@ -6,5 +6,15 @@ playwright-report/
 artifacts/captures/*.mp4
 artifacts/captures/*.mov
 artifacts/captures/frames/
+# Iteration evidence keeps the final encoded artifact and compact receipts.
+# Raw browser recordings and implementer-only preview frames are reproducible
+# working files, not publication evidence.
+artifacts/iteration-03/two-cycles-48s.webm
+artifacts/iteration-03/pre-capture/
+artifacts/iteration-03/cycle-1-preview/
+artifacts/iteration-03/cycle-2-preview/
+artifacts/iteration-03/cycle-3-preview/
+artifacts/iteration-03/boundary/
+artifacts/iteration-03/reviewer-packet/
 .DS_Store
 *.log

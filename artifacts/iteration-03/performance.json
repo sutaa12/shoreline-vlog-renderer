@@ -1,0 +1,14 @@
+{
+  "samples": 240,
+  "warmupFrames": 206,
+  "medianMs": 16.6,
+  "p95Ms": 19,
+  "longFramesOver33_34Ms": 0,
+  "estimatedFps": 60.24,
+  "renderer": "WebKit WebGL",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "effectiveQualityTier": "high"
+}

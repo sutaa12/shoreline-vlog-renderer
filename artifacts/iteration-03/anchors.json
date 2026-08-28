@@ -1,0 +1,344 @@
+[
+  {
+    "name": "environment-wide",
+    "frame": 60,
+    "cue": "Environmental wide",
+    "snapshot": {
+      "frame": 2221,
+      "phaseFrame": 61,
+      "cinematic": {
+        "cue": "Environmental wide",
+        "position": [
+          -0.071735,
+          2.108054,
+          7.583619
+        ],
+        "target": [
+          0.014715,
+          1.013182,
+          -0.404819
+        ],
+        "roll": -0.005667,
+        "fov": 44.355416,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          0,
+          0.01585,
+          -0.000749,
+          0.001321,
+          0.993037,
+          0
+        ],
+        "secondary": [
+          -0.000749,
+          0.001321
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 2.033333,
+        "waterEdge": 0.175665
+      }
+    },
+    "sha256": "6343dca8c6ca3dfdfefe058bb9046c07d4a313c9609f0879590e249b1f0fb657",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "name": "follow",
+    "frame": 240,
+    "cue": "Follow",
+    "snapshot": {
+      "frame": 2401,
+      "phaseFrame": 241,
+      "cinematic": {
+        "cue": "Follow",
+        "position": [
+          -1.10062,
+          1.851028,
+          5.571224
+        ],
+        "target": [
+          0.075253,
+          1.053188,
+          -0.04949
+        ],
+        "roll": 0.000914,
+        "fov": 39.734695,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          0,
+          -0.015375,
+          0,
+          0,
+          1,
+          0
+        ],
+        "secondary": [
+          0,
+          0
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 8.033333,
+        "waterEdge": 0.172448
+      }
+    },
+    "sha256": "bfae9b28c01c459382d5d1b20d4aa4fe4d085eec79b2889675a7074bcc0f7865",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "name": "reframe",
+    "frame": 345,
+    "cue": "Reframe",
+    "snapshot": {
+      "frame": 2506,
+      "phaseFrame": 346,
+      "cinematic": {
+        "cue": "Reframe",
+        "position": [
+          1.075187,
+          1.813316,
+          4.503496
+        ],
+        "target": [
+          -0.078313,
+          1.162269,
+          -0.039193
+        ],
+        "roll": -0.002307,
+        "fov": 34.948377,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          0.165,
+          0.020241,
+          0.507258,
+          -0.036636,
+          0.9993,
+          0
+        ],
+        "secondary": [
+          0.507258,
+          -0.036636
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 11.533333,
+        "waterEdge": 0.174984
+      }
+    },
+    "sha256": "1b45423771e7b868aef3d54ff8ee695ed2ab00380a77f65238f6eba392b7ecbd",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "name": "close-up-1080",
+    "frame": 480,
+    "cue": "Close-up",
+    "snapshot": {
+      "frame": 2641,
+      "phaseFrame": 481,
+      "cinematic": {
+        "cue": "Close-up",
+        "position": [
+          0.238392,
+          1.70077,
+          3.604405
+        ],
+        "target": [
+          -0.028878,
+          1.004326,
+          0.000831
+        ],
+        "roll": -0.005512,
+        "fov": 31.575081,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          -0.012,
+          -0.018707,
+          -0.147524,
+          -0.009325,
+          0.793403,
+          0
+        ],
+        "secondary": [
+          -0.147524,
+          -0.009325
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 16.033333,
+        "waterEdge": 0.166243
+      }
+    },
+    "sha256": "7ea87ee3da26cea84a04c02168e9a8acdff6bff6ea92261be26ac8115f7c2fc3",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "name": "quiet-beat",
+    "frame": 600,
+    "cue": "Quiet beat",
+    "snapshot": {
+      "frame": 2761,
+      "phaseFrame": 601,
+      "cinematic": {
+        "cue": "Quiet beat",
+        "position": [
+          -0.25587,
+          1.862808,
+          4.772319
+        ],
+        "target": [
+          -0.011163,
+          1.198502,
+          -0.141031
+        ],
+        "roll": -0.000914,
+        "fov": 36.034356,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          0,
+          0.027565,
+          -0.077142,
+          -0.018009,
+          0.244145,
+          0
+        ],
+        "secondary": [
+          -0.077142,
+          -0.018009
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 20.033333,
+        "waterEdge": 0.167552
+      }
+    },
+    "sha256": "6f320a9ee5308dd0dfb49af307ac276611e5ab48a26202c949caf74c38662fd2",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "name": "return-wide",
+    "frame": 690,
+    "cue": "Return wide",
+    "snapshot": {
+      "frame": 2851,
+      "phaseFrame": 691,
+      "cinematic": {
+        "cue": "Return wide",
+        "position": [
+          0.095361,
+          2.041309,
+          7.196697
+        ],
+        "target": [
+          -0.003751,
+          1.040077,
+          -0.330607
+        ],
+        "roll": 0.002223,
+        "fov": 43.414647,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          0,
+          -0.026526,
+          -0.026219,
+          0.020286,
+          0.803791,
+          0
+        ],
+        "secondary": [
+          -0.026219,
+          0.020286
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 23.033333,
+        "waterEdge": 0.159884
+      }
+    },
+    "sha256": "719931abbbd66470a809eebab1cbded05da4dcd6f69ccd22a49624dd12ce3b3e",
+    "width": 1920,
+    "height": 1080
+  }
+]

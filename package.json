@@ -1,0 +1,24 @@
+{
+  "name": "shoreline-vlog-renderer-iteration-03",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "verify:rights": "node -e \"const fs=require('node:fs');const crypto=require('node:crypto');const checks=[['public/assets/character.vrm','12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2'],['public/assets/environment/iteration-03/shoreline-plate.webp','ce16e6892f7a7c369e73390a23fe1043f68446c3a565bd96a853d53e386d9fed']];for(const [p,e] of checks){const a=crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');if(a!==e)throw new Error('Asset hash mismatch at '+p+'. Restore the recorded asset before continuing.')}console.log(JSON.stringify({status:'RIGHTS_PENDING',accepted:false,technicalProvenance:'RECORDED',assetHashes:'MATCH',nextAction:'Human legal acceptance is required before redistribution or adoption.'},null,2));\"",
+    "test:acceptance": "playwright test --grep \"technical acceptance\"",
+    "capture:evidence": "CAPTURE_EVIDENCE=1 playwright test --grep \"capture evidence\"",
+    "verify:evidence": "playwright test --grep \"verify evidence packet\""
+  },
+  "dependencies": {
+    "@pixiv/three-vrm": "3.5.5",
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "typescript": "7.0.2",
+    "vite": "8.2.2"
+  }
+}

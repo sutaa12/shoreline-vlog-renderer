@@ -1,0 +1,59 @@
+{
+  "horizonSeam": {
+    "artifacts": [
+      "anchors/environment-wide.png",
+      "anchors/follow.png",
+      "anchors/return-wide.png"
+    ],
+    "movingWaterUsesFeatheredNearAndHorizonEdges": true
+  },
+  "foregroundParallax": {
+    "cameraTranslationRange": {
+      "min": [
+        -1.20852,
+        1.673442,
+        3.481758
+      ],
+      "max": [
+        1.083675,
+        2.1474,
+        7.849617
+      ]
+    },
+    "plateOwnedForeground": true
+  },
+  "contactShadow": {
+    "active": true,
+    "artifact": "anchors/close-up-1080.png"
+  },
+  "reflectionMatch": {
+    "plateDerivedNeutralWaterColor": true,
+    "artifact": "contact-sheet.png"
+  },
+  "cameraEnvelope": {
+    "framesCovered": 720,
+    "allInside": true,
+    "cues": [
+      "Return wide",
+      "Environmental wide",
+      "Follow",
+      "Reframe",
+      "Close-up",
+      "Quiet beat"
+    ],
+    "positionMin": [
+      -1.20852,
+      1.673442,
+      3.481758
+    ],
+    "positionMax": [
+      1.083675,
+      2.1474,
+      7.849617
+    ],
+    "rollMin": -0.007082,
+    "rollMax": 0.007082,
+    "fovMin": 31.013434,
+    "fovMax": 45.966092
+  }
+}

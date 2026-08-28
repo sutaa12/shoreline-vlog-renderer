@@ -1,0 +1,22 @@
+{
+  "readyEvent": true,
+  "advancingFrames": true,
+  "vrmLoaded": true,
+  "mtoonMaterials": 20,
+  "outlineActive": true,
+  "springSystems": 1,
+  "systems": {
+    "plateProjection": true,
+    "movingOcean": true,
+    "sandReceiver": true,
+    "unevenRocks": true,
+    "fogBridge": true,
+    "reflectionCue": true,
+    "contactShadow": true
+  },
+  "cameraEnvelopeOk": true,
+  "fatalConsoleErrors": 0,
+  "fatalPageErrors": 0,
+  "renderer": "WebKit WebGL",
+  "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+}

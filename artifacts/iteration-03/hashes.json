@@ -1,0 +1,94 @@
+{
+  "assets": {
+    "characterVrm": {
+      "path": "public/assets/character.vrm",
+      "sha256": "12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2"
+    },
+    "environmentPlate": {
+      "path": "public/assets/environment/iteration-03/shoreline-plate.webp",
+      "sha256": "ce16e6892f7a7c369e73390a23fe1043f68446c3a565bd96a853d53e386d9fed"
+    }
+  },
+  "evidence": [
+    {
+      "path": "two-cycles-48s.webm",
+      "sha256": "097302a040967bfc19aa3c68d0b37903489626017fc9b0fa917b98366d671fc8"
+    },
+    {
+      "path": "two-cycles-48s.mp4",
+      "sha256": "cfebea638ea91af0b40b981d2937ada08a8828f5bd7db778608cb445761932c4"
+    },
+    {
+      "path": "contact-sheet.png",
+      "sha256": "1ef53d7f874195da924af154b44d95c3d0b221773c6a3d97a4793be6323025b8"
+    },
+    {
+      "path": "boundary-strip.png",
+      "sha256": "58ed63fbc90f65a82c94dce511cef9e5aefba4ed7349337ce80aadce6053a0d2"
+    },
+    {
+      "path": "smoke.json",
+      "sha256": "d20fe9bacc932bcf2ba3325222afef99da97aa8170be2147597c7c407f9ae6e0"
+    },
+    {
+      "path": "performance.json",
+      "sha256": "fdfcee6737894c9ae38eea9c82d50c61f40e9f5ff54c97a11b7258086cb011a5"
+    },
+    {
+      "path": "determinism.json",
+      "sha256": "d0c5eadd1180606a552ba7e8201fc40d65d635b670960cb8c9bdbd10f5b442a7"
+    },
+    {
+      "path": "boundary-state.json",
+      "sha256": "ddf9a703f178c457d16c34f2c289089c365989a182ffa1b634ea783f95998765"
+    },
+    {
+      "path": "ffprobe.json",
+      "sha256": "29eea4f5fff864552d18643b086bdf1d5567f0754568e07ce2f2e8365740be03"
+    },
+    {
+      "path": "anchors.json",
+      "sha256": "b86394a1267844a9df2128d08050c614865eb7bf3a8c24e1be675f9356a54d41"
+    },
+    {
+      "path": "environment-evidence.json",
+      "sha256": "c4e7df1f28effdb5e2a7dabbc4fe566f73af9572e8a91cbf996a3f13b08b8239"
+    },
+    {
+      "path": "video-boundary-transition.png",
+      "sha256": "9b8cf63abbdab5f5d05c4bfc99b10f2c08d413f859fb1fa0e41d7ba71c4d5b73"
+    },
+    {
+      "path": "diagnostics.json",
+      "sha256": "aa537551f94ece9eece41156b7752ce0f206ea27ff455fdec46cfd176dcc1523"
+    },
+    {
+      "path": "motion-diagnostic-strip.png",
+      "sha256": "211da054d285f9e4ef98f05d968880d75d2acd38ed848626825dfb3bee0c80aa"
+    },
+    {
+      "path": "water-motion-crop.png",
+      "sha256": "edb25fd221fc50be10c30c592dad71171a13019b26da5f60a8c66185ba41dce4"
+    },
+    {
+      "path": "temporal-evidence.json",
+      "sha256": "e800539a41b23ac0d7b4ac595123cacad6bcf90b2fef1f8ece9ec95260e63654"
+    },
+    {
+      "path": "coast-motion-2s.mp4",
+      "sha256": "f84b8a8d0097d66a85c12865e1b98de6c1508c6bb21667be1b20e29f13055477"
+    },
+    {
+      "path": "performance-beat-4.8s.mp4",
+      "sha256": "bb4fcb239a243dac7d5b09ec36f6ec28f9e09a4f72c323a89a0cc399df52207c"
+    },
+    {
+      "path": "coast-temporal-strip.png",
+      "sha256": "fcad620e53c51586d3b7b9c7b65c1ddc403a66771643a488f51daa41dc02b3e5"
+    },
+    {
+      "path": "performance-temporal-strip.png",
+      "sha256": "0c501a5e0fcbed531a53a3de7f31aa95ad71aa82af362e92835f642fb2d24938"
+    }
+  ]
+}

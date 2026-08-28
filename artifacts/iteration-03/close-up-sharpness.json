@@ -1,0 +1,15 @@
+{
+  "capture": {
+    "path": "anchors/close-up-1080.png",
+    "width": 1920,
+    "height": 1080,
+    "sha256": "7ea87ee3da26cea84a04c02168e9a8acdff6bff6ea92261be26ac8115f7c2fc3"
+  },
+  "plate": {
+    "path": "public/assets/environment/iteration-03/shoreline-plate.webp",
+    "nativeWidth": 1664,
+    "nativeHeight": 936,
+    "captureScale": 1.1538461538461537
+  },
+  "inspection": "Full-resolution close-up retained for neutral sharpness review; no native-resolution claim is made."
+}

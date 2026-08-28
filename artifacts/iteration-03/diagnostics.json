@@ -1,0 +1,350 @@
+{
+  "sequential": true,
+  "waterIntervalFrames": 15,
+  "waterIntervalSeconds": 0.5,
+  "descriptionsAreNeutral": true,
+  "frames": [
+    {
+      "name": "water-a",
+      "frame": 90,
+      "proves": "shoreline wavelet phase A",
+      "snapshot": {
+        "frame": 2251,
+        "phaseFrame": 91,
+        "cinematic": {
+          "cue": "Environmental wide",
+          "position": [
+            -0.170239,
+            2.141366,
+            7.399057
+          ],
+          "target": [
+            0.012934,
+            1.020685,
+            -0.440308
+          ],
+          "roll": 0.000883,
+          "fov": 43.290772,
+          "envelopeOk": true,
+          "maxEnvelopeRatio": 0.974613
+        },
+        "character": {
+          "loaded": true,
+          "mtoonMaterials": 20,
+          "outlineActive": true,
+          "springSystems": 1,
+          "pose": [
+            0,
+            0.022032,
+            -0.000126,
+            0.000221,
+            0.998529,
+            0
+          ],
+          "secondary": [
+            -0.000126,
+            0.000221
+          ]
+        },
+        "environment": {
+          "plateLoaded": true,
+          "oceanActive": true,
+          "sandActive": true,
+          "rocksActive": true,
+          "fogBridgeActive": true,
+          "reflectionActive": true,
+          "oceanPhase": 3.033333,
+          "waterEdge": 0.174921
+        }
+      },
+      "sha256": "6be098d77c8b7da4e9923ace916a105e7a0f60b2f7bf69c0671a640ab32881ff",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "water-b",
+      "frame": 105,
+      "proves": "shoreline wavelet phase B after 0.5 seconds",
+      "snapshot": {
+        "frame": 2266,
+        "phaseFrame": 106,
+        "cinematic": {
+          "cue": "Environmental wide",
+          "position": [
+            -0.19804,
+            2.1474,
+            7.351106
+          ],
+          "target": [
+            0.011693,
+            1.025306,
+            -0.448896
+          ],
+          "roll": 0.004824,
+          "fov": 43.033133,
+          "envelopeOk": true,
+          "maxEnvelopeRatio": 0.974613
+        },
+        "character": {
+          "loaded": true,
+          "mtoonMaterials": 20,
+          "outlineActive": true,
+          "springSystems": 1,
+          "pose": [
+            0,
+            0.02024,
+            -0.000058,
+            0.000082,
+            0.999378,
+            0
+          ],
+          "secondary": [
+            -0.000058,
+            0.000082
+          ]
+        },
+        "environment": {
+          "plateLoaded": true,
+          "oceanActive": true,
+          "sandActive": true,
+          "rocksActive": true,
+          "fogBridgeActive": true,
+          "reflectionActive": true,
+          "oceanPhase": 3.533333,
+          "waterEdge": 0.175457
+        }
+      },
+      "sha256": "20ec69b0c97b84bf223003528cbbb1868bef7540a825c43846c3ce70245f0868",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "weight-left",
+      "frame": 180,
+      "proves": "grounded hip, knee, ankle, and asymmetric arm response",
+      "snapshot": {
+        "frame": 2341,
+        "phaseFrame": 181,
+        "cinematic": {
+          "cue": "Follow",
+          "position": [
+            -0.841975,
+            1.95789,
+            6.194764
+          ],
+          "target": [
+            0.064784,
+            1.026401,
+            -0.185622
+          ],
+          "roll": -0.00185,
+          "fov": 41.017166,
+          "envelopeOk": true,
+          "maxEnvelopeRatio": 0.974613
+        },
+        "character": {
+          "loaded": true,
+          "mtoonMaterials": 20,
+          "outlineActive": true,
+          "springSystems": 1,
+          "pose": [
+            0,
+            -0.015735,
+            0.000002,
+            0.000001,
+            0.999996,
+            0
+          ],
+          "secondary": [
+            0.000002,
+            0.000001
+          ]
+        },
+        "environment": {
+          "plateLoaded": true,
+          "oceanActive": true,
+          "sandActive": true,
+          "rocksActive": true,
+          "fogBridgeActive": true,
+          "reflectionActive": true,
+          "oceanPhase": 6.033333,
+          "waterEdge": 0.157421
+        }
+      },
+      "sha256": "36cd2114da382618e5c2f030bd12c78e74924a175db7783e6e8c28c73508ea74",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "follow",
+      "frame": 240,
+      "proves": "bounded lateral follow translation",
+      "snapshot": {
+        "frame": 2401,
+        "phaseFrame": 241,
+        "cinematic": {
+          "cue": "Follow",
+          "position": [
+            -1.10062,
+            1.851028,
+            5.571224
+          ],
+          "target": [
+            0.075253,
+            1.053188,
+            -0.04949
+          ],
+          "roll": 0.000914,
+          "fov": 39.734695,
+          "envelopeOk": true,
+          "maxEnvelopeRatio": 0.974613
+        },
+        "character": {
+          "loaded": true,
+          "mtoonMaterials": 20,
+          "outlineActive": true,
+          "springSystems": 1,
+          "pose": [
+            0,
+            -0.015375,
+            0,
+            0,
+            1,
+            0
+          ],
+          "secondary": [
+            0,
+            0
+          ]
+        },
+        "environment": {
+          "plateLoaded": true,
+          "oceanActive": true,
+          "sandActive": true,
+          "rocksActive": true,
+          "fogBridgeActive": true,
+          "reflectionActive": true,
+          "oceanPhase": 8.033333,
+          "waterEdge": 0.172448
+        }
+      },
+      "sha256": "bfae9b28c01c459382d5d1b20d4aa4fe4d085eec79b2889675a7074bcc0f7865",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "three-quarter",
+      "frame": 345,
+      "proves": "character volume and opposite-side camera reveal",
+      "snapshot": {
+        "frame": 2506,
+        "phaseFrame": 346,
+        "cinematic": {
+          "cue": "Reframe",
+          "position": [
+            1.075187,
+            1.813316,
+            4.503496
+          ],
+          "target": [
+            -0.078313,
+            1.162269,
+            -0.039193
+          ],
+          "roll": -0.002307,
+          "fov": 34.948377,
+          "envelopeOk": true,
+          "maxEnvelopeRatio": 0.974613
+        },
+        "character": {
+          "loaded": true,
+          "mtoonMaterials": 20,
+          "outlineActive": true,
+          "springSystems": 1,
+          "pose": [
+            0.165,
+            0.020241,
+            0.507258,
+            -0.036636,
+            0.9993,
+            0
+          ],
+          "secondary": [
+            0.507258,
+            -0.036636
+          ]
+        },
+        "environment": {
+          "plateLoaded": true,
+          "oceanActive": true,
+          "sandActive": true,
+          "rocksActive": true,
+          "fogBridgeActive": true,
+          "reflectionActive": true,
+          "oceanPhase": 11.533333,
+          "waterEdge": 0.174984
+        }
+      },
+      "sha256": "1b45423771e7b868aef3d54ff8ee695ed2ab00380a77f65238f6eba392b7ecbd",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "weight-right",
+      "frame": 360,
+      "proves": "counter-weight and delayed secondary response",
+      "snapshot": {
+        "frame": 2521,
+        "phaseFrame": 361,
+        "cinematic": {
+          "cue": "Reframe",
+          "position": [
+            1.000107,
+            1.799562,
+            4.404337
+          ],
+          "target": [
+            -0.068535,
+            1.143588,
+            -0.033665
+          ],
+          "roll": -0.002533,
+          "fov": 34.577731,
+          "envelopeOk": true,
+          "maxEnvelopeRatio": 0.974613
+        },
+        "character": {
+          "loaded": true,
+          "mtoonMaterials": 20,
+          "outlineActive": true,
+          "springSystems": 1,
+          "pose": [
+            0.165,
+            0.015402,
+            0.387517,
+            -0.350467,
+            0.998358,
+            0
+          ],
+          "secondary": [
+            0.387517,
+            -0.350467
+          ]
+        },
+        "environment": {
+          "plateLoaded": true,
+          "oceanActive": true,
+          "sandActive": true,
+          "rocksActive": true,
+          "fogBridgeActive": true,
+          "reflectionActive": true,
+          "oceanPhase": 12.033333,
+          "waterEdge": 0.167985
+        }
+      },
+      "sha256": "ed2b81030402dd159359ee598408e63e97434b688872a4440b55b70d378ac8dc",
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

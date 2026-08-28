@@ -1,0 +1,29 @@
+{
+  "project": "Shoreline Vlog Renderer — Controlled Field Report",
+  "url": "https://shoreline-vlog-field-report.narinarinari.chatgpt.site/",
+  "version_number": 1,
+  "summary_source_commit": "e0f556b60dfdd1f5bf5b306b855f5f47fdb01d2c",
+  "summary_archive_sha256": "33f63762570a1e4cb6730427236a84051fb0ce536aab31801e1fd898fa1b144d",
+  "deployment_status": "succeeded",
+  "access": {
+    "mode": "custom",
+    "owner_only": true,
+    "allowed_account_user_count": 1,
+    "workspace_group_count": 0,
+    "tenant_group_count": 0,
+    "external_visitor_count": 0
+  },
+  "live_browser_checks": {
+    "page_title": "Shoreline Vlog Renderer — Controlled Field Report",
+    "comparison_tabs": 3,
+    "tab_interactions_passed": 3,
+    "loaded_images": 3,
+    "mobile_viewport_width": 390,
+    "mobile_document_width": 390,
+    "site_origin_console_errors": 0,
+    "site_origin_console_warnings": 0
+  },
+  "published_claim": "Evidence summary only; the demo remains rejected after the third visual refinement cycle.",
+  "human_gate": "HUMAN_PENDING",
+  "rights_gate": "RIGHTS_PENDING"
+}

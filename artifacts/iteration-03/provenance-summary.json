@@ -1,0 +1,9 @@
+{
+  "provider": "OpenAI",
+  "referenceImagesSupplied": false,
+  "aiGeneratedEnvironmentDisclosureRequired": true,
+  "plateSha256": "ce16e6892f7a7c369e73390a23fe1043f68446c3a565bd96a853d53e386d9fed",
+  "characterSha256": "12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2",
+  "technicalProvenance": "RECORDED",
+  "formalHumanLegalAcceptance": "RIGHTS_PENDING"
+}

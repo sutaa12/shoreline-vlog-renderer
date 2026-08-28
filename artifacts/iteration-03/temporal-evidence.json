@@ -1,0 +1,19 @@
+{
+  "coast": {
+    "clip": "coast-motion-2s.mp4",
+    "strip": "coast-temporal-strip.png",
+    "durationSeconds": 2,
+    "sampleFps": 3,
+    "normalColor": true,
+    "source": "two-cycles-48s.mp4"
+  },
+  "performance": {
+    "clip": "performance-beat-4.8s.mp4",
+    "strip": "performance-temporal-strip.png",
+    "durationSeconds": 4.8,
+    "sampleFps": 1.666667,
+    "normalColor": true,
+    "source": "two-cycles-48s.mp4"
+  },
+  "differenceVisualizationUsed": false
+}

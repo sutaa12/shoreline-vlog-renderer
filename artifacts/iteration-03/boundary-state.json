@@ -1,0 +1,124 @@
+{
+  "centralBoundaryFrame": 720,
+  "frames": [
+    "N-3",
+    "N-2",
+    "N-1",
+    "N",
+    "N+1",
+    "N+2",
+    "N+3"
+  ],
+  "sequential": true,
+  "stateWasResetAtWrap": false,
+  "cameraStepDeltas": [
+    0.00903869,
+    0.00730092,
+    0.00569373,
+    0.00438588,
+    0.00331271,
+    0.0024192
+  ],
+  "maxCameraStepDelta": 0.00903869,
+  "samePhaseCameraDeltaAfterCycle": 0,
+  "samePhase": {
+    "first": {
+      "frame": 3361,
+      "phaseFrame": 481,
+      "cinematic": {
+        "cue": "Close-up",
+        "position": [
+          0.238392,
+          1.70077,
+          3.604405
+        ],
+        "target": [
+          -0.028878,
+          1.004326,
+          0.000831
+        ],
+        "roll": -0.005512,
+        "fov": 31.575081,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          -0.012,
+          -0.018707,
+          -0.147524,
+          -0.009325,
+          0.793403,
+          0
+        ],
+        "secondary": [
+          -0.147524,
+          -0.009325
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 16.033333,
+        "waterEdge": 0.166243
+      }
+    },
+    "second": {
+      "frame": 4081,
+      "phaseFrame": 481,
+      "cinematic": {
+        "cue": "Close-up",
+        "position": [
+          0.238392,
+          1.70077,
+          3.604405
+        ],
+        "target": [
+          -0.028878,
+          1.004326,
+          0.000831
+        ],
+        "roll": -0.005512,
+        "fov": 31.575081,
+        "envelopeOk": true,
+        "maxEnvelopeRatio": 0.974613
+      },
+      "character": {
+        "loaded": true,
+        "mtoonMaterials": 20,
+        "outlineActive": true,
+        "springSystems": 1,
+        "pose": [
+          -0.012,
+          -0.018707,
+          -0.147524,
+          -0.009325,
+          0.793403,
+          0
+        ],
+        "secondary": [
+          -0.147524,
+          -0.009325
+        ]
+      },
+      "environment": {
+        "plateLoaded": true,
+        "oceanActive": true,
+        "sandActive": true,
+        "rocksActive": true,
+        "fogBridgeActive": true,
+        "reflectionActive": true,
+        "oceanPhase": 16.033333,
+        "waterEdge": 0.166243
+      }
+    }
+  }
+}

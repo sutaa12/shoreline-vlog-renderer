@@ -1,0 +1,17 @@
+{
+  "artifact": "artifacts/iteration-03/two-cycles-48s.mp4",
+  "dropbox_path": "/ShorelineVlogRenderer/shoreline-vlog-iteration-03-rejected-final.mp4",
+  "dropbox_revision": "65a136c72fbf12ccc7f93",
+  "mime_type": "video/mp4",
+  "size_bytes": 22650914,
+  "sha256": "cfebea638ea91af0b40b981d2937ada08a8828f5bd7db778608cb445761932c4",
+  "sync_verification": {
+    "local_hash_match": true,
+    "remote_metadata_found": true,
+    "remote_size_match": true,
+    "server_modified_utc": "2026-08-28T03:55:30Z"
+  },
+  "shared_link_created": false,
+  "adoption_status": "REJECT_AFTER_CYCLE_LIMIT",
+  "rights_status": "RIGHTS_PENDING"
+}
